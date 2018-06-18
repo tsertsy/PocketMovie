@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="eu.epfc.mypocketmovie.view.RecentMovieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_recent_movies"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/recent_next_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextPage"
+        android:text="Next Page"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/recent_previous_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="previousPage"
+        android:text="Previous Page"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+</LinearLayout>
